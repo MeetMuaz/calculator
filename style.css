@@ -38,6 +38,11 @@ input[type=text]{
     color: #ffffff;
 }
 
+form div {
+    display: flex;
+    justify-content: center;
+}
+
 input[type=button]{
     height: 40px;
     width: 60px;
@@ -50,6 +55,7 @@ input[type=button]{
                 -45px -45px 90px #273745;
     color: rgb(255, 255, 255);
     transition: .2s;
+    margin: 2px;
 }
 input[type=button]:hover{
     background: #25fbc5;
