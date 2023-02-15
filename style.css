@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #22303c;
+    background-color: #e0e0e0;
 }
 
 .calculator-container{
@@ -20,23 +20,22 @@ body{
 
 
 form{
-    background-color: #22303c;
+    background-color: #e0e0e0;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 45px 45px 90px #1d2933,
-                -45px -45px 90px #273745;
-    border: 2px solid #25fbc5;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 input[type=text]{
     width: 100%;
-    height: 55px;
+    height: 100px;
     border: 0;
     background: transparent;
     outline: none;
     font-size: 20px;
-    color: #ffffff;
-    padding: 0 15px;
+    padding: 0 20px;
+    color: #0e0e0e;
 }
 
 form div {
@@ -47,20 +46,33 @@ form div {
 input[type=button]{
     height: 40px;
     width: 60px;
-    border-radius: 5px;
-    border: 2px solid #25fbc5;
+    border-radius: 10px;
+    border: 0;
     outline: none;
     margin-top: 5px;
-    background-color: #22303c;
-    box-shadow: 45px 45px 90px #1d2933,
-                -45px -45px 90px #273745;
-    color: rgb(255, 255, 255);
+    background: transparent;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #0e0e0e;
     transition: .2s;
     margin: 2px;
+    font-size: 20px;
 }
+
 input[type=button]:hover{
-    background: #25fbc5;
+    background: rgb(255, 0, 179);
+    color: #e0e0e0;
 }
+
+input[class~=operator]{
+    color: rgb(255, 0, 179);
+    font-size: 25px;
+}
+
+input[class~=operator]:hover{
+    color: #e0e0e0;
+}
+
 
 #evaluate{
     width: 124px;

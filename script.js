@@ -10,23 +10,23 @@ let evaluate = document.getElementById('evaluate');
 for (let i = 0; i < inputValue.length; i++) {
     inputValue[i].addEventListener("click", () => {
         display.value += inputValue[i].value;
-        vibrateSound(200);
+        vibrateSound(100);
     })
 }
 // delete one value
 deleteOne.addEventListener("click", () =>{
     display.value = display.value.toString().slice(0,-1);
-    vibrateSound(200);
+    vibrateSound(100);
 })
 // delete all value
 deleteAll.addEventListener("click", () =>{
     display.value = "";
-    vibrateSound(200);
+    vibrateSound(100);
 })
 // get the result
 evaluate.addEventListener("click", () =>{
     display.value = eval(display.value);
-    vibrateSound(300);
+    vibrateSound(100);
 })
 
 
@@ -37,10 +37,10 @@ let  keypressInputValue = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "*"
 document.addEventListener("keypress", (e)=> {
     if (keypressInputValue.includes(e.key) === true) {
         display.value += e.key;
-        vibrateSound(200);
+        vibrateSound(100);
     } else if (e.key === "=" || e.key === "Enter"){
         display.value = eval(display.value);
-        vibrateSound(300);
+        vibrateSound(100);
     } else{
         // no code!
     }
@@ -50,7 +50,7 @@ document.addEventListener("keypress", (e)=> {
 document.addEventListener("keydown", (e)=> {
     if (e.key === "Backspace" || e.key === "Delete") {
         display.value = display.value.toString().slice(0,-1);
-        vibrateSound(200);
+        vibrateSound(100);
     }
 });
 
